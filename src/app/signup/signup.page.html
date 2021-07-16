@@ -1,0 +1,78 @@
+<ion-content overflow-scroll="false">
+    <div class="container">
+        <div>
+            <div class="logo">
+                <img src="assets/logo-copier-service.png">
+            </div>
+            <div class="form">
+                <p>REGISTRATI</p>
+                <div class="input-group">
+                    <label for="">Nome Utente</label>
+                    <ion-input clearInput type="text" [(ngModel)]="username" class="input" padding-horizontal
+                        clear-input="true"></ion-input>
+                </div>
+                <div class="input-group">
+                    <label for="">Email</label>
+                    <ion-input clearInput type="email" [(ngModel)]="email" class="input" padding-horizontal
+                        clear-input="true"></ion-input>
+                </div>
+                <div class="input-group">
+                    <label for="">Telefono</label>
+                    <ion-input clearInput type="text" [(ngModel)]="telephone" class="input" padding-horizontal
+                        clear-input="true"></ion-input>
+                </div>
+                <div class="input-group">
+                    <label for="">Password</label>
+                    <ion-input clearInput type="password" [(ngModel)]="password" class="input" padding-horizontal
+                        clear-input="true"></ion-input>
+                </div>
+            </div>
+            <div class="item">
+                <label for="">Vorrei maggiori informazioni per:</label>
+                <ion-list>
+                    <ion-item>
+                        <ion-checkbox color="primary" slot="start" value="Arredi Ufficio"></ion-checkbox>
+                        <ion-label>Arredi Ufficio</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-checkbox color="primary" slot="start" value="Gestione Documentale"></ion-checkbox>
+                        <ion-label>Gestione Documentale</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-checkbox color="primary" slot="start" value="Pc Server"></ion-checkbox>
+                        <ion-label>Pc Server</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-checkbox color="primary" slot="start" value="Printing"></ion-checkbox>
+                        <ion-label>Printing</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-checkbox color="primary" slot="start" value="Arredi Ufficio"></ion-checkbox>
+                        <ion-label>Arredi Ufficio</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-checkbox color="primary" slot="start" value="Visual Display"></ion-checkbox>
+                        <ion-label>Visual Display</ion-label>
+                    </ion-item>
+                    <ion-item>
+                        <ion-checkbox color="primary" slot="start" value="Telefonia"></ion-checkbox>
+                        <ion-label>Telefonia</ion-label>
+                    </ion-item>
+                </ion-list>
+            </div>
+
+            <div class="register-container">
+
+                <ion-button expand="block" class="btn-white" (click)="signup()" color="primary">
+                    <strong class="white">Registrati</strong>
+                </ion-button>
+
+                <div align="center" style="margin-bottom: 15%; margin-top: 20px;">
+                    <a routerLink="/login" routerDirection="back">Hai già un account ?</a>
+                    <br>
+                    <ion-text class="error" align="center">{{error}}</ion-text>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

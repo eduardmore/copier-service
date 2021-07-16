@@ -1,0 +1,72 @@
+<!-- /**
+* Ionic Firebase Full Auth App  (https://store.enappd.com/product/firebase-starter-full-auth/)
+*
+* Copyright © 2019-present Enappd. All rights reserved.
+*
+* This source code is licensed as per the terms found in the
+* LICENSE.md file in the root directory of this source tree.
+*/  -->
+
+
+<ion-content no-padding>
+  <div class="main">
+    <ion-card no-margin>
+      <ion-card-content>
+        <ion-row class="row">
+          <div class="fire-logo" align="center">
+            <img src="assets/copierservice.png" class="img-logo">
+            <ion-text>
+              <h2 no-margin margin-vertical text-center>Benvenuto su Copier Service</h2>
+            </ion-text>
+          </div>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-input clearInput type="email" placeholder="Email" [(ngModel)]="email" class="input" padding-horizontal
+              clear-input="true"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-input clearInput type="password" placeholder="Password" [(ngModel)]="password" class="input"
+              padding-horizontal clear-input="true"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button expand="block" (click)="login()" color="primary" ><!-- era color="undefined" e c'era class="transition"-->
+              <strong class="white">
+                Login</strong></ion-button>
+          </ion-col>
+        </ion-row>
+
+        <!--inizio login con impronta-->
+        <!-- <ion-row>
+          <ion-col>
+              <div class="ion-padding" align="center" *ngIf="currentUser !== undefined">
+                <ion-button class="quadrato" color="primary" size="medium" (click)="loginWithFingerprint()"  expand="block"><ion-icon name="finger-print"></ion-icon> </ion-button>
+              </div>
+          </ion-col>
+        </ion-row> -->
+      <!--fine--> 
+      
+        <ion-row>
+          <ion-col>
+            <ion-text class="error" align="center">{{error}}</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text align="center" class="block">Non hai ancora un account ?
+              <span class="bold" routerLink="/signup">Registrati</span></ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-text align="center" class="block bold" routerLink="/forgot">Password Dimenticata</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

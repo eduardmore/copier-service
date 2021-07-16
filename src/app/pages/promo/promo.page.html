@@ -1,0 +1,85 @@
+<!--<link rel="stylesheet" href="promo.page.scss">-->
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      <ion-title>Copier Service - Promo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content overflow-scroll="false">
+<div class="background">
+    <div class="container">
+        <div class="content">
+            <ion-item *ngIf="user">
+            <div class="card">
+                <div class="card-item" *ngIf=" titoli[0].valore != -1">
+                    <a href=""><img src="{{'https://www.copierservice.it/app/imgpromo/promoArredi.png?img=' +myRand }}" alt=""></a>
+                    <div>
+                        <p class="title">{{titoli[0].valore}}</p>
+                        <p class="desc">Sconto del: {{sconti[0].valore}}</p>
+                        <p class="desc">{{messaggi[0].valore}}</p>
+                        <p class="desc">Dal {{dateInizio[0].valore}} al {{dateFine[0].valore}}</p>
+                        <ion-button class="button_promo" expand="block" (click)="sendPromo('0')" color="primary">Richiedi Promo</ion-button>
+
+                    </div>
+                </div>
+                <div class="card-item" *ngIf=" titoli[1].valore != -1">
+                    <a href=""><img src="{{'https://www.copierservice.it/app/imgpromo/promoGestioneDoc.png?img=' +myRand }}" alt=""></a>
+                    <div>
+                        <p class="title">{{titoli[1].valore}}</p>
+                        <p class="desc">Sconto del: {{sconti[1].valore}}</p>
+                        <p class="desc">{{messaggi[1].valore}}</p>
+                        <p class="desc">Dal {{dateInizio[1].valore}} al {{dateFine[1].valore}}</p>
+                        <ion-button class="button_promo" expand="block" (click)="sendPromo('1')" color="primary">Richiedi Promo</ion-button>
+                    </div>
+                </div>
+                <div class="card-item" *ngIf=" titoli[2].valore != -1">
+                    <a href=""><img src="{{'https://www.copierservice.it/app/imgpromo/promoPcServer.png?img=' +myRand }}" alt=""></a>
+                    <div>
+                        <p class="title">{{titoli[2].valore}}</p>
+                        <p class="desc">Sconto del: {{sconti[2].valore}}</p>
+                        <p class="desc">{{messaggi[2].valore}}</p>
+                        <p class="desc">Dal {{dateInizio[2].valore}} al {{dateFine[2].valore}}</p>
+                        <ion-button class="button_promo" expand="block" (click)="sendPromo('2')" color="primary">Richiedi Promo</ion-button>
+                    </div>
+                </div>
+                <div class="card-item" *ngIf=" titoli[3].valore != -1">
+                    <a href=""><img src="{{'https://www.copierservice.it/app/imgpromo/promoPrinting.png?img=' +myRand }}" alt=""></a>
+                    <div>
+                        <p class="title">{{titoli[3].valore}}</p>
+                        <p class="desc">Sconto del: {{sconti[3].valore}}</p>
+                        <p class="desc">{{messaggi[3].valore}}</p>
+                        <p class="desc">Dal {{dateInizio[3].valore}} al {{dateFine[3].valore}}</p>
+                        <ion-button class="button_promo" expand="block" (click)="sendPromo('3')" color="primary">Richiedi Promo</ion-button>
+                    </div>
+                </div>
+                <div class="card-item" *ngIf=" titoli[4].valore != -1">
+                    <a href=""><img src="{{'https://www.copierservice.it/app/imgpromo/promoVisualDisplay.png?img=' +myRand }}" alt=""></a>
+                    <div>
+                        <p class="title">{{titoli[4].valore}}</p>
+                        <p class="desc">Sconto del: {{sconti[4].valore}}</p>
+                        <p class="desc">{{messaggi[4].valore}}</p>
+                        <p class="desc">Dal {{dateInizio[4].valore}} al {{dateFine[4].valore}}</p>
+                        <ion-button class="button_promo" expand="block" (click)="sendPromo('4')" color="primary">Richiedi Promo</ion-button>
+                    </div>
+                </div>
+                <div class="card-item" *ngIf=" titoli[5].valore != -1">
+                    <a href=""><img src="{{'https://www.copierservice.it/app/imgpromo/promoTelefonia.png?img=' +myRand }}" alt=""></a>
+                    <div>
+                        <p class="title">{{titoli[5].valore}}</p>
+                        <p class="desc">Sconto del: {{sconti[5].valore}}</p>
+                        <p class="desc">{{messaggi[5].valore}}</p>
+                        <p class="desc">Dal {{dateInizio[5].valore}} al {{dateFine[5].valore}}</p>
+                        <ion-button class="button_promo" expand="block" (click)="sendPromo('5')" color="primary">Richiedi Promo</ion-button>
+                    </div>
+                </div>
+            </div>
+                </ion-item>
+        </div>
+
+    </div>
+</div>
+
+</ion-content>

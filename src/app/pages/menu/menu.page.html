@@ -1,0 +1,90 @@
+<!--<link rel="stylesheet" href="menu.page.scss">-->
+<ion-menu contentID="content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+      
+  <ion-content>
+    
+      <!--inzio-->
+      <div class="container">
+        <div class="left-sidebar">
+            <div class="header">
+                <div class="title">
+                    <p>
+                        Benvenuto {{ nomeMittente }}
+                    </p>
+                </div>
+                <div class="logo">
+                    <a routerLink="/menu/main"><img src="../../../assets/icon/favicon.png" alt=""></a>
+                </div>
+            </div>
+            <div class="menu">
+                <ion-menu-toggle>
+                <a style="display:block" routerLink="/menu/main">
+                <div class="menu-item">
+                    <img src="/assets/icon/home.svg" alt="">
+                    <p><span routerLink="/menu/main">Home</span></p>
+                </div>
+                </a>
+                <a style="display:block" routerLink="/menu/profile">
+                <div class="menu-item">
+                    <img src="/assets/icon/profile.svg" alt="">
+                    <p><span menuClose="left" routerLink="/menu/profile">Profile</span></p>
+                </div>
+                </a>
+                <a style="display:block" routerLink="/menu/chisiamo">
+                <div class="menu-item">
+                    <img src="/assets/icon/emoticon.svg" alt="">
+                    <p><span menuClose="left" routerLink="/menu/chisiamo">Chi Siamo</span></p>
+                </div>
+                </a>
+                <a style="display:block" routerLink="/menu/nostriservizi">
+                <div class="menu-item">
+                    <img src="/assets/icon/esitmate.svg" alt="">
+                    <p><span menuClose="left" routerLink="/menu/nostriservizi">I Nostri Servizi</span></p>
+                </div>
+                </a>
+                <a style="display:block" routerLink="/menu/assistenza">
+                <div class="menu-item">
+                    <img src="/assets/icon/assistance.svg" alt="">
+                    <p><span menuClose="left"  routerLink="/menu/assistenza">Assistenza</span></p>
+                </div>
+                </a>
+                <a style="display:block" routerLink="/menu/preventivi">
+                <div class="menu-item">
+                    <img src="/assets/icon/pencil.svg" alt="">
+                    <p><span menuClose="left" routerLink="/menu/preventivi">Preventivi</span></p>
+                </div>
+                </a>
+                <a style="display:block" routerLink="/menu/promo">
+                <div class="menu-item">
+                    <img src="/assets/icon/promo.svg" alt="">
+                    <p><span menuClose="left" routerLink="/menu/promo">Promo</span></p>
+                </div>
+                </a>
+                <!--<div class="menu-item"> <!- OK SANDRO ma dopo modifica menu non fa il logout->
+                    <img src="/assets/icons/logout.svg" alt="">
+                    <p><span (click)="logoutMenu()">Logout</span></p>
+                </div>-->
+                <a style="display:block" (click)="logoutMenu()">
+                    <div class="menu-item">
+                    <img src="/assets/icon/logout.svg" alt="">
+                     <p><span>Logout</span></p>
+                    </div>
+                </a>
+            </ion-menu-toggle>
+            </div>
+        </div>
+        
+    </div>  
+    <!--fine-->      
+      <!-- creo le categorie principali del menu-->
+
+
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="content" main></ion-router-outlet>

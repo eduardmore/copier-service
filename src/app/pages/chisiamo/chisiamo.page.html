@@ -1,0 +1,41 @@
+<!--<link rel="stylesheet" href="chisiamo.page.scss">---->
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Copier Service - Chi Siamo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-content overflow-scroll="false">
+        <div class="background">
+    <div class="container">
+        <div class="content">
+            <div>
+                
+                <!--<img src="/assets/chi_siamo.jpg?img=031220">-->
+                <img src="{{'https://www.copierservice.it/app/imgpage/chi-siamo-page.jpg?img=' +myRand }}">
+                <p class="description">
+                  Copier Service è un’azienda specializzata nella vendita, noleggio e assistenza dei migliori strumenti tecnologici come, Stampanti o Multifunzione, VisualDisplay o Business TV, Arredi Ufficio, Computer e Server supportiamo con i nostri prodotti e servizi dalle più piccole attività fino alle grandi aziende.
+<br><br>
+                  Grazie alle collaborazioni con i migliori marchi del settore possiamo proporre le soluzioni più adatte alle esigenze di ogni singolo cliente. Il nostro cardine è quello di semplificare il lavoro, riducendo i tempi e i costi dei nostri clienti fornendo gli strumenti giusti.
+                  <br><br>
+                  Altra cosa molto importante per noi è la formazione del personale, infatti, i nostri tecnici periodicamente seguono corsi di aggiornamento per stare sempre al passo con le ultime novità del settore.
+                </p>
+            </div>
+            <div class="button-group">
+                <button class="btn btn-primary"
+                (click)="
+                download(
+                  'https://www.copierservice.it/app/company-profile.pdf',
+                  'Company Profile PDF'
+                )
+              "
+                >
+                    COMPANY PROFILE
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</ion-content>

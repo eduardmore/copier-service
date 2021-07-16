@@ -1,0 +1,39 @@
+<!--<link rel="stylesheet" href="assistenza.page.scss">-->
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Copier Service - Assistenza</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content overflow-scroll="false">
+    <div class="background">
+    <div class="container">
+        <div class="content">
+            <div>
+                <p>Richiedi Assistenza</p>
+                <div class="form">
+                    <div class="item">
+                        <ion-button class="btn btn-primary" (click)="scanCode()">Scan Code</ion-button>
+                        <ion-label for="">Modello stampante: <b>{{scannedResult}}</b></ion-label>
+                    </div>
+ 
+                    <div class="item">
+                        <label for="">Motivo Richiesta</label>
+                        <div class="input-group-textfield">
+                        <ion-textarea [(ngModel)]="richiesta" type="text" rows="10" required></ion-textarea>
+                        </div>
+                    </div>
+                    
+                        <!--<ion-button expand="block" (click)="sendAssistance(subject,message)" color="primary">Invia Richiesta</ion-button>-->
+                        <ion-button expand="block" (click)="sendAssistenza(richiesta)" color="primary">Invia Richiesta</ion-button>
+                        <!--da modificare con il campo telefono-->
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</ion-content>

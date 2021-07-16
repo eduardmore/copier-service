@@ -1,0 +1,33 @@
+<ion-content overflow-scroll="false">
+    <div class="container">
+        <div>
+            <div class="logo" align="center">
+                <img src="assets/copierservice.png">
+            </div>
+
+            <div class="form">
+                <p>Recupera password</p>
+                <p class="reset-password">
+                    INSERISCI LA MAIL PER RIPRISTINARE LA PASSWORD
+                </p>
+                <div class="input-group">
+                    <label for="">Email</label>
+                    <ion-input clearInput type="email" [(ngModel)]="email" class="input" padding-horizontal
+                        clear-input="true"></ion-input>
+                </div>
+            </div>
+            <div class="register-container">
+                <ion-button class="btn btn-white" expand="block" (click)="recover()" color="primary">Recupera Password
+                </ion-button>
+            </div>
+            <div class="register-container">
+                <ion-button class="btn btn-primary">
+                    <a routerLink="/login" routerDirection="back">Hai già un account ?</a>
+                </ion-button>
+            </div>
+
+            <ion-text class="error" text-center>{{error}}</ion-text>
+
+        </div>
+    </div>
+</ion-content>

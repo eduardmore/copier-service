@@ -1,0 +1,49 @@
+
+<!--<link rel="stylesheet" href="preventivi.page.scss">-->
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      <ion-title>Copier Service - Preventivi</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content overflow-scroll="false">
+    <div class="background">
+<div class="container">
+    <div class="card">
+        <div class="card-item">
+            <img src="{{'https://www.copierservice.it/app/imgprev/p_arredi.jpg?img=' +myRand }}">
+            <p>Arredi</p>
+            <ion-button class="button_preventivi" expand="block" (click)="sendPreventivo('Arredi')" color="secondary">Richiedi Preventivo</ion-button>
+        </div>
+        <div class="card-item">
+            <img src="{{'https://www.copierservice.it/app/imgprev/p_telefonia.jpg?img=' +myRand }}">
+            <p>Telefonia</p>
+            <ion-button class="button_preventivi" expand="block" (click)="sendPreventivo('Telefonia')" color="secondary">Richiedi Preventivo</ion-button>
+        </div>
+        <div class="card-item">
+            <img src="{{'https://www.copierservice.it/app/imgprev/p_visual.jpg?img=' +myRand }}">
+            <p>Visual Display</p>
+            <ion-button class="button_preventivi" expand="block" (click)="sendPreventivo('Visual Display')" color="secondary">Richiedi Preventivo</ion-button>
+        </div>
+        <div class="card-item">
+            <img src="{{'https://www.copierservice.it/app/imgprev/p_printing.jpg?img=' +myRand }}">
+            <p>Printing Solution</p> 
+            <ion-button class="button_preventivi" expand="block" (click)="sendPreventivo('Printing Solution')" color="secondary">Richiedi Preventivo</ion-button>
+        </div>
+        <div class="card-item">
+            <img src="{{'https://www.copierservice.it/app/imgprev/p_doc.jpg?img=' +myRand }}">
+            <p>Gestione Documentale</p>
+            <ion-button class="button_preventivi" expand="block" (click)="sendPreventivo('Gestione Documentale')" color="secondary">Richiedi Preventivo</ion-button>
+        </div>
+        <div class="card-item">
+            <img src="{{'https://www.copierservice.it/app/imgprev/p_pc.jpg?img=' +myRand }}">
+            <p>Pc e Server</p>            
+            <ion-button class="button_preventivi" expand="block" (click)="sendPreventivo('PC e Server')" color="secondary">Richiedi Preventivo</ion-button>
+        </div>
+    </div>
+</div>
+</div>
+</ion-content>

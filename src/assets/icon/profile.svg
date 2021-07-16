@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_399" data-name="Rectangle 399" width="23" height="23" transform="translate(22 177)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-22 -177)" clip-path="url(#clip-path)">
+    <g id="ios-home" transform="translate(19.348 174.351)">
+      <g id="Group_57" data-name="Group 57">
+        <path id="profilo" d="M11.791,11.791A4.422,4.422,0,1,0,7.369,7.369,4.435,4.435,0,0,0,11.791,11.791Zm0,2.211c-2.929,0-8.843,1.492-8.843,4.422v2.211H20.634V18.423C20.634,15.494,14.72,14,11.791,14Z" transform="translate(2.358 3.884)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

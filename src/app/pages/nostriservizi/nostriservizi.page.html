@@ -1,0 +1,43 @@
+<!--<link rel="stylesheet" href="nostriservizi.page.scss">-->
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Copier Service - Servizi</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+    <ion-content overflow-scroll="false">
+        <div class="background">
+    <div class="container">
+        <div class="card">
+            <div class="card-item" (click)="goToURL('https://www.copierservice.it/arredi-ufficio/')">
+                <a><img src="{{'https://www.copierservice.it/app/imgcat/arredi.jpg?img=' +myRand }}"></a>
+                <p>Arredi</p>
+            </div>
+            <div class="card-item" (click)="goToURL('https://www.copierservice.it/telefonia/')">
+                <a><img src="{{'https://www.copierservice.it/app/imgcat/telefonia.jpg?img=' +myRand }}"></a>
+                <p>Telefonia</p>
+            </div>
+            <div class="card-item" (click)="goToURL('https://www.copierservice.it/visualdisplay/')">
+                <a><img src="{{'https://www.copierservice.it/app/imgcat/visual.jpg?img=' +myRand }}"></a>
+                <p>Visual Display</p>
+            </div>
+            <div class="card-item" (click)="goToURL('https://www.copierservice.it/printing-solution/')">
+                <a><img src="{{'https://www.copierservice.it/app/imgcat/printing.jpg?img=' +myRand }}"></a>
+                <p>Printing Solution</p> 
+            </div>
+            <div class="card-item" (click)="goToURL('https://www.copierservice.it/gestione-documentale/')">
+                <a><img src="{{'https://www.copierservice.it/app/imgcat/doc.jpg?img=' +myRand }}"></a>
+                <p>Gestione Documentale</p>
+            </div>
+            <div class="card-item" (click)="goToURL('https://www.copierservice.it/pc-e-server/')">
+                <a><img src="{{'https://www.copierservice.it/app/imgcat/pc.jpg?img=' +myRand }}"></a>
+                <p>Pc e Server</p>
+            </div>
+        </div>
+    </div>
+</div>
+    </ion-content>
+

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "282663090238",
+    "firebase_url": "https://copier-service-app.firebaseio.com",
+    "project_id": "copier-service-app",
+    "storage_bucket": "copier-service-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282663090238:android:b6c369589482226c40796f",
+        "android_client_info": {
+          "package_name": "it.copierservice.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282663090238-boodiblpq1b4o2sfb1e88eettll82bga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUx9Io3OpGUS-K-NHkNVygW9G83jnr9d8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282663090238-boodiblpq1b4o2sfb1e88eettll82bga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

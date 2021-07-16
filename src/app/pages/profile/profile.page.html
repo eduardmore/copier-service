@@ -1,0 +1,48 @@
+<!--<link rel="stylesheet" href="profile.page.scss">-->
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Copier Service - Profilo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <ion-content overflow-scroll="false">
+        <div class="background">
+    <div class="container">
+        <ion-item *ngIf="user">
+        <div class="content">
+            <p>Benvenuto {{user.displayName}}</p>
+            <div class="profile">
+                <p>Di seguito i dettagli del tuo profilo</p>
+                <div class="profile-item">
+                    <label for="">Nome Utente</label>
+                    <p>{{user.displayName}}</p>
+                </div>
+                <div class="profile-item">
+                    <label for="">E-mail</label>
+                    <p>{{user.email}}</p>
+                </div>
+                <div class="profile-item">
+                    <label for="">Telefono</label>
+                    <p>{{telephoneMittente}}</p>
+                </div>
+                <div class="border"></div>
+            </div>
+            <div class="form">
+                <div class="item">
+                    <label for="">Aggiorna Password</label>
+                    <div class="input-group">
+                        <label for="">Nuova Password</label>
+                        <ion-input [(ngModel)]="nopasswordme" type="text"></ion-input>
+                    </div>
+                </div>
+            </div>
+            <div class="inquery">
+                <ion-button class="btn btn-primary" (click)="updatePassword()">Aggiorna</ion-button>
+            </div>
+        </div>
+        </ion-item>
+    </div>
+</div>
+</ion-content>

@@ -1,0 +1,55 @@
+<!--<link rel="stylesheet" href="main.page.scss">-->
+
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Copier Service Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <ion-content overflow-scroll="false">
+        <div class="background">
+    <div class="container">
+        <ion-item *ngIf=" mostraPromo != -1">
+            <div class="card">
+                <div class="card-item">
+                    <a routerLink="/menu/promo"><img src="{{'https://www.copierservice.it/app/imgpromo/promo.jpg?img=' +myRand }}"></a>
+                    <div>
+                        <p class="title">Promo per TE!</p>
+                    </div>
+                </div>
+            </div>
+        </ion-item>
+        <div class="card">
+                <div class="card-item">
+                    <a routerLink="/menu/chisiamo"><img src="{{'https://www.copierservice.it/app/imgcat/chisiamo.jpg?img=' +myRand }}"></a>
+                    <div>
+                        <p class="title">Il mondo di Copier Service</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <a routerLink="/menu/nostriservizi"><img src="{{'https://www.copierservice.it/app/imgcat/servizi.jpg?img=' +myRand }}"></a>
+                    <div>
+                        <p class="title">I nostri servizi</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <a routerLink="/menu/assistenza"><img src="{{'https://www.copierservice.it/app/imgcat/assistenza.jpg?img=' +myRand }}"></a>
+                    <div>
+                        <p class="title">Assistenza</p>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <a routerLink="/menu/preventivi"><img src="{{'https://www.copierservice.it/app/imgcat/preventivi.jpg?img=' +myRand }}"></a>
+                    <div>
+                        <p class="title">Preventivi</p>
+                    </div>
+                </div>  
+        </div>
+    </div>    
+</div>
+</ion-content>
+
